@@ -1,0 +1,127 @@
+/* section 1 */
+.divisor-section-1{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.divisor-section-1 img{
+    width: 100%;
+}
+.divisor-section-1 article {
+    position: absolute;
+    z-index: 10;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+.divisor-section-1 article header h1{
+    font-family: 'Yellowtail', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    /*color: var(--seccond-color-green);*/
+    color: #FFFFE0;
+    text-shadow: 2px 2px 4px #000;
+
+}
+.divisor-section-1 article p{
+    font-size: 40px;
+    font-weight: 800;
+    /*color: var(--first-color-blue);*/
+    color: #FFF5E1;
+    text-shadow: 2px 2px 4px #000;
+
+}
+.divisor-section-1 article a {
+    width: 100px;
+    height: 50px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.divisor-section-1 article a button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    background: var(--button-background-yellow);
+    cursor: pointer;
+}
+
+.divisor-section-1 article a button:hover{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: var(--button-background-yellow-hover);
+}
+.divisor-section-1 article a button span{
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--first-color-blue);
+}
+
+/* section 5 */
+.divisor-section-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+.divisor-section-3 .gallery-container{
+    max-width: 1280px;
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.divisor-section-3 .gallery-container figure{
+    position: relative;
+}
+.divisor-section-3 .gallery-container figure img{
+    max-width: 400px;
+    width: 100%;
+}
+.divisor-section-3 .gallery-container figure figcaption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 15px 30px;
+    background: var(--color-white);
+    border-radius: 15px;
+
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--first-color-blue);
+}
+
+@media only screen and (max-width: 1200px) {
+    .divisor-section-1 img{
+        height: 300px;
+        object-fit: cover;
+    }
+    .divisor-section-1 article{
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 80%;
+    }
+    .divisor-section-2{
+        padding: 0 20px;
+    }
+    .divisor-section-3 .gallery-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .divisor-section-2 {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .divisor-section-1 img{
+        height: 400px;
+        object-fit: cover;
+    }
+}

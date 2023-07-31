@@ -1,0 +1,15 @@
+# http://humanstxt.org/
+
+
+/* TEAM */
+
+  Developer & Designer: Enes Ago
+  Contact: nafikompani@gmail.com, +38970600370
+  instagram: @agoenes
+
+/* SITE */
+
+  Last update: 07/31/2023
+  Standards: HTML5, CSS3, microdata, microformats
+  Components: HTML5, PureCSS, firebase
+  Hosting: Hostinger
