@@ -10,32 +10,34 @@
 .divisor-section-1 article {
     position: absolute;
     z-index: 10;
-    top: 30%;
-    left: 50%;
+    top: 50%;
+    left: 20%;
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
 }
 .divisor-section-1 article header h1{
-    font-family: 'Yellowtail', sans-serif;
-    font-size: 25px;
-    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
     /*color: var(--seccond-color-green);*/
-    color: #FFFFE0;
-    text-shadow: 2px 2px 4px #000;
+    /*color: var(--first-color-blue);*/
+    color: #000;
+    /*text-shadow: 2px 2px 4px #000;*/
 
 }
 .divisor-section-1 article p{
     font-size: 40px;
-    font-weight: 800;
+    font-weight: 400;
+    letter-spacing: 7px;
     /*color: var(--first-color-blue);*/
-    color: #FFF5E1;
-    text-shadow: 2px 2px 4px #000;
+    color: var(--first-color-blue);
+    /*text-shadow: 2px 2px 4px #000;*/
 
 }
 .divisor-section-1 article a {
-    width: 100px;
-    height: 50px;
+    width: 160px;
+    height: 60px;
     margin-top: 25px;
     cursor: pointer;
 }
@@ -44,7 +46,7 @@
     height: 100%;
     border: none;
     border-radius: 10px;
-    background: var(--button-background-yellow);
+    background: var(--button-background-purple);
     cursor: pointer;
 }
 
@@ -52,50 +54,105 @@
     width: 100%;
     height: 100%;
     border: none;
-    background: var(--button-background-yellow-hover);
+    background: var(--button-background-purple-hover);
 }
 .divisor-section-1 article a button span{
     font-weight: 500;
     font-size: 18px;
-    color: var(--first-color-blue);
+    color: #fff;
+    letter-spacing: 4px;
 }
 
-/* section 5 */
-.divisor-section-3{
+/* divisor 2 */
+.divisor-section-2{
+    min-height: 800px;
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    margin: 100px 0;
+    margin: 50px 0;
 }
-.divisor-section-3 .gallery-container{
-    max-width: 1280px;
-    width: 100%;
-    min-height: 500px;
+.divisor-section-2 .container{
+    height: 80%;
+    width: 80%;
+
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    /*gap: 30px;*/
 }
-.divisor-section-3 .gallery-container figure{
+.divisor-section-2 .container .articleContainer{
     position: relative;
 }
-.divisor-section-3 .gallery-container figure img{
-    max-width: 400px;
+.divisor-section-2 .container .articleContainer article{
+    display: flex;
+    align-items: center;
+}
+.divisor-section-2 .container .articleContainer article header{
+    position: relative;
+    right: -30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.divisor-section-2 .container .articleContainer article header h2{
+    font-family: 'Open Sans';
+    font-size: 35px;
+    font-weight: bold;
+}
+.divisor-section-2 .container .articleContainer article header a button{
+    font-family: "Open Sans";
+    background: none;
+    border: none;
+    color: #000;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 900;
+    cursor: pointer;
+    margin-left: 2px;
+}
+.divisor-section-2 .container .articleContainer article img{
+    height: 450px;
+}
+.divisor-section-2 .container .top {
+    height: 100%;
     width: 100%;
-}
-.divisor-section-3 .gallery-container figure figcaption{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 
-    padding: 15px 30px;
-    background: var(--color-white);
-    border-radius: 15px;
-
-    font-size: 15px;
-    font-weight: 500;
-    color: var(--first-color-blue);
+    display: flex;
+    justify-content: center;
 }
+.divisor-section-2 .container .top .articleContainer article{
+    margin-left: 100px;
+}
+.divisor-section-2 .container .bot{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.divisor-section-2 .container .bot .articleContainer .first {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+    position: relative;
+    top: -50px;
+}
+.divisor-section-2 .container .bot .articleContainer .first header{
+    width: 100%;
+    right: 0;
+}
+.divisor-section-2 .container .bot .articleContainer .sec {
+    position: relative;
+    top: 50px;
+}
+.divisor-section-2 .container .bot .articleContainer .sec header h2{
+    width: 255px;
+}
+
 
 @media only screen and (max-width: 1200px) {
     .divisor-section-1 img{
@@ -104,20 +161,23 @@
     }
     .divisor-section-1 article{
         left: 50%;
-        transform: translate(-50%, 0);
+        transform: translate(-50%, -50%);
         width: 80%;
     }
-    .divisor-section-2{
-        padding: 0 20px;
+
+}
+@media only screen and (max-width: 1000px) {
+    .divisor-section-2 .container{
+        gap: 50px;
     }
-    .divisor-section-3 .gallery-container{
+    .divisor-section-2 .container .bot {
         flex-direction: column;
-        gap: 20px;
+    }
+    .divisor-section-2 .container .bot .articleContainer .first,
+    .divisor-section-2 .container .bot .articleContainer .sec {
+        top: 0;
     }
 
-    .divisor-section-2 {
-        flex-direction: column;
-    }
 }
 @media only screen and (max-width: 800px) {
     .divisor-section-1 img{

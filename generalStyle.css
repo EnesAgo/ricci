@@ -24,8 +24,8 @@
     --color-white-hover: #FFFFFFCC;
     --color-white-darker: #FFFFFF4C;
 
-    --button-background-yellow: #ffd12b;
-    --button-background-yellow-hover: #f5d05d;
+    --button-background-purple: #7971EA;
+    --button-background-purple-hover: #584dff;
 
     --background-navbar: #4c9e9e;
     --background-navbar-hover: #008080;
@@ -53,7 +53,6 @@ body {
     grid-template-areas:
     "header-menu"
     "main"
-    "banner"
     "footer";
 
     grid-template-columns: 1fr;
@@ -216,13 +215,7 @@ footer{
 /* footer */
 footer{
     min-height: 500px;
-
-    /*background: linear-gradient(180deg, var(--footer-banner-background) 0%, #2C3B38 31.25%);*/
-    /*background: #2C3B38;*/
-
-    background: rgb(44,59,56);
-    /*background: linear-gradient(0deg, rgba(44,59,56,1) 45%, rgba(49,122,108,1) 100%);*/
-    /*background: linear-gradient(0deg, rgba(44,59,56,1) 60%, #ff77bb 100%);*/
+    background: #2C3B38;
 
     display: flex;
     justify-content: center;
