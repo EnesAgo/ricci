@@ -35,28 +35,28 @@
     /*text-shadow: 2px 2px 4px #000;*/
 
 }
-.divisor-section-1 article a {
+
+/* shop now button */
+.shopNow{
     width: 160px;
     height: 60px;
     margin-top: 25px;
     cursor: pointer;
 }
-.divisor-section-1 article a button{
-    width: 100%;
-    height: 100%;
+.shopNow button{
+    width: 160px;
+    height: 60px;
     border: none;
     border-radius: 10px;
     background: var(--button-background-purple);
     cursor: pointer;
 }
 
-.divisor-section-1 article a button:hover{
-    width: 100%;
-    height: 100%;
+.shopNow button:hover{
     border: none;
     background: var(--button-background-purple-hover);
 }
-.divisor-section-1 article a button span{
+.shopNow button span{
     font-weight: 500;
     font-size: 18px;
     color: #fff;
@@ -113,7 +113,8 @@
     margin-left: 2px;
 }
 .divisor-section-2 .container .articleContainer article img{
-    height: 450px;
+    max-height: 450px;
+    height: 100%;
 }
 .divisor-section-2 .container .top {
     height: 100%;
@@ -154,6 +155,122 @@
 }
 
 
+/* divisor-section-3 */
+.divisor-section-3{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 600px;
+    align-items: center;
+    gap: 50px;
+
+    background: #F8F9FA;
+}
+.divisor-section-3 > header h2{
+    font-family: "Open Sans";
+    font-size: 50px;
+    font-weight: 900;
+    color: #333;
+}
+.divisor-section-3 section{
+    width: 100%;
+}
+.divisor-section-3 section article{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.divisor-section-3 section article img{
+    aspect-ratio: 3/2;
+    max-width: 720px;
+    width: 100%;
+}
+.divisor-section-3 section article section{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.divisor-section-3 section article section header h2{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 900;
+    color: var(--button-background-purple);
+}
+.divisor-section-3 section article section .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.divisor-section-3 section article section .content p{
+    text-align: center;
+}
+
+
+
+
+/* divisor-section-4 */
+.divisor-section-4{
+    margin: 50px 0;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.divisor-section-4 .container{
+    height: 90%;
+    width: 90%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.divisor-section-4 .container article{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.divisor-section-4 .container article img.first {
+    max-width: 120px;
+}
+.divisor-section-4 .container article img{
+    max-width: 90px;
+    width: 100%;
+}
+.divisor-section-4 .container article section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.divisor-section-4 .container article section header{
+    text-align: left;
+    width: 100%;
+}
+.divisor-section-4 .container article section header h2{
+    text-align: left;
+    font-size: 35px;
+    font-weight: 900;
+    color: var(--button-background-purple);
+}
+.divisor-section-4 .container article section p{
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 600;
+
+    max-width: 275px;
+    width: 100%;
+}
+
+
+/* responsive */
 @media only screen and (max-width: 1200px) {
     .divisor-section-1 img{
         height: 300px;
@@ -163,6 +280,10 @@
         left: 50%;
         transform: translate(-50%, -50%);
         width: 80%;
+    }
+    .divisor-section-4 .container {
+        gap: 45px;
+        justify-content: center;
     }
 
 }
