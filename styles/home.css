@@ -165,7 +165,7 @@
     align-items: center;
     gap: 50px;
 
-    background: #F8F9FA;
+    background: var(--background-gray);
 }
 .divisor-section-3 > header h2{
     font-family: "Open Sans";
@@ -269,6 +269,80 @@
     width: 100%;
 }
 
+/* divisor-section-5 */
+.divisor-section-5{
+    padding: 50px 0;
+    min-height: 300px;
+    background: var(--background-gray);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.divisor-section-5 video{
+    max-width: 720px;
+    width: 100%;
+}
+
+/* divisor-section-6 */
+.divisor-section-6{
+    min-height: 400px;
+    padding: 50px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 75px;
+}
+.divisor-section-6 section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3px;
+    max-width: 610px;
+    width: 100%;
+    justify-content: center;
+}
+.divisor-section-6 section img{
+    width: 200px;
+}
+.divisor-section-6 header{
+    display: flex;
+    flex-direction: column;
+}
+.divisor-section-6 header h2{
+    color: #000;
+    font-family: "Open Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-bottom: 50px;
+}
+.divisor-section-6 header a{
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    background: linear-gradient(200deg, #574CF3 0%, #F00 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin: 5px 0;
+    transition: 500ms linear;
+}
+.divisor-section-6 header a:hover {
+    background: linear-gradient(200deg, #F00 0%, #574CF3 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
 
 /* responsive */
 @media only screen and (max-width: 1200px) {
@@ -298,11 +372,24 @@
     .divisor-section-2 .container .bot .articleContainer .sec {
         top: 0;
     }
+    .divisor-section-2 .container .bot .articleContainer .sec{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .divisor-section-2 .container .bot .articleContainer .sec header{
+        margin-top: 15px;
+        width: 75%;
+        text-align: right;
+        align-items: flex-end;
+    }
 
 }
 @media only screen and (max-width: 800px) {
     .divisor-section-1 img{
         height: 400px;
         object-fit: cover;
+    }
+    .divisor-section-6{
+        flex-direction: column;
     }
 }
