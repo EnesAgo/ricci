@@ -307,11 +307,12 @@ footer nav ul li section a:hover img{
         background-color: var(--background-navbar-hover);
     }
     .header-menu nav ul li, .header-menu nav ul li a{
-        height: 50px;
+        height: 75px;
         width: 100%;
-        line-height: 50px;
+        line-height: 75px;
         text-align: center;
 
+        font-size: 24px;
         font-weight: 500;
         color: var(--color-white);
     }
@@ -401,7 +402,7 @@ footer nav ul li section a:hover img{
     footer nav ul{
         flex-direction: column;
         text-align: center;
-        gap: 20px;
+        gap: 35px;
     }
     footer nav ul li section{
         justify-content: center;

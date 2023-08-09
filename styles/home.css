@@ -344,6 +344,73 @@
 
 
 
+/* divisor-section-7 */
+.divisor-section-7{
+    min-height: 500px;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divisor-section-7 .container{
+    height: 90%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 35px;
+}
+.divisor-section-7 .container > header h2{
+    font-family: 'Open Sans';
+    font-size: 35px;
+    font-weight: bold;
+}
+.divisor-section-7 .container section ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+.divisor-section-7 .container section ul li {
+    max-width: 300px;
+}
+.divisor-section-7 .container section ul li a article{
+    min-height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.divisor-section-7 .container section ul li a article img{
+    max-width: 250px;
+    width: 100%;
+}
+.divisor-section-7 .container section ul li a article header{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.divisor-section-7 .container section ul li a article header p{
+    font-family: "Open Sans";
+    font-size: 16px;
+    color: #274C5B;
+}
+.divisor-section-7 .container section ul li a article header h2 {
+    font-family: "Open Sans";
+    font-size: 16px;
+    color: #000;
+}
+.divisor-section-7 .container section ul li a article header .price {
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 500;
+    color: #183daf;
+}
+.divisor-section-7 .container section ul li a:hover article header *{
+    text-decoration: underline;
+}
+
+
 /* responsive */
 @media only screen and (max-width: 1200px) {
     .divisor-section-1 img{
