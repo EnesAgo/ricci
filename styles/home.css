@@ -432,6 +432,22 @@
     .divisor-section-2 .container{
         gap: 50px;
     }
+    .divisor-section-2 .container .articleContainer article img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .divisor-section-2 .container .top .articleContainer, .divisor-section-2 .container .top .articleContainer article{
+        width: 100%;
+    }
+    .divisor-section-2 .container .top .articleContainer article{
+        flex-direction: column-reverse;
+        margin: 0;
+        gap: 20px;
+    }
+    .divisor-section-2 .container .top .articleContainer article header{
+        width: 100%;
+        left: 0;
+    }
     .divisor-section-2 .container .bot {
         flex-direction: column;
     }
