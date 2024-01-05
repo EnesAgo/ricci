@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+
+
+    <title>Ricci</title>
+    <meta name="author" content="Enes Ago">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="copyright" content="&copy; 2023-today Ricci">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="alternate" hreflang="en" href="https://ricci.com.mk/en" />
+    <link rel="alternate" hreflang="tr" href="https://ricci.com.mk/tr" />
+    <link rel="alternate" hreflang="tr" href="https://ricci.com.mk/mk" />
+    <link rel="alternate" hreflang="x-default" href="https://ricci.com.mk/" />
+
+    <link rel="alternate" hreflang="en" href="https://ricci.com.mk/en" />
+    <link rel="alternate" hreflang="tr" href="https://ricci.com.mk/tr" />
+    <link rel="alternate" hreflang="tr" href="https://ricci.com.mk/mk" />
+    <link rel="alternate" hreflang="x-default" href="https://ricci.com.mk/" />
+
+    <script src="./script.js" defer></script>
+
+    <link rel="author" type="text/plain" href="/humans.txt">
+
+    <link rel="icon" href="./img/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@AgoEnes">
+    <meta name="twitter:creator" content="@AgoEnes">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:url" content="https://ricci.com.mk">
+    <meta name="twitter:image" content="https://ricci.com.mk/Logo.png">
+
+    <!-- Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Ricci">
+    <meta property="article:author" content="https://www.instagram.com/agoenes/">
+    <meta property="og:title" content="Ricci">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://ricci.com.mk">
+    <meta property="og:image" content="https://ricci.com.mk/Logo.png">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/img/favicon-16x16.png">
+    <link rel="icon" href="%PUBLIC_URL%/img/favicon.ico">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/generalStyles.css">
+
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <header class="header-menu">
+      <a href="/" rel="home" class="logo">
+        <!--            <img alt="logo" src="img/Logo.jpeg" />-->
+        <span class="logo-text"><span>RİCCİ</span><span>Since 1991</span></span>
+      </a>
+      <nav id="hamburger-menu">
+        <ul>
+          <li>
+            <a href="/" rel="home" >Home</a>
+          </li>
+          <li>
+            <a href="/men" rel="products">Men</a>
+          </li>
+          <li>
+            <a href="/women" rel="Gallery">Women</a>
+          </li>
+          <li>
+            <a href="/shoes" rel="Gallery">Shoes</a>
+          </li>
+          <!--                <li>-->
+          <!--                    <a href="/stores" rel="Gallery">Stores</a>-->
+          <!--                </li>-->
+          <li>
+            <a href="/contact" rel="contact">Contact</a>
+          </li>
+          <!--                <li id="language">-->
+
+          <!--                    <p>EN <i class="down-arrow"></i></p>-->
+          <!--                    <ul>-->
+          <!--                        <li><a href="/tr/">TR</a></li>-->
+          <!--                        <li><a href="/mk/">MK</a></li>-->
+          <!--                    </ul>-->
+
+          <!--                </li>-->
+        </ul>
+      </nav>
+      <section class="hamburger-menu" onclick="hamburgerMenuToggle()">
+        <input class="checkbox" type="checkbox"/>
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+      </section>
+    </header>
+
+    <main id="root"></main>
+
+    <footer>
+      <nav>
+        <ul>
+          <li>
+            <h3>Company</h3>
+
+            <a href="/">Home</a> <br />
+            <a href="/men">Men</a> <br />
+            <a href="/women">Women</a> <br />
+            <a href="/shoes">Shoes</a> <br />
+            <!--                    <a href="/stores">Stores</a> <br />-->
+            <a href="/contact">Contact</a> <br />
+
+            <br />
+            <!--                    <p style="color: white">&copy; 2023-today Ricci</p>-->
+          </li>
+          <li>
+            <h3>Locations</h3>
+
+            <a href="">Ohrid</a> <br />
+
+            <a href="">Bitola</a> <br />
+
+            <a href="">Struga</a> <br />
+
+
+          </li>
+          <li>
+            <h3>Contact</h3>
+
+            <a href="mailto:info@ricci.com.mk">info@ricci.com.mk</a> <br />
+
+            <a href="tel:+38975810907">075 810 907</a> <br />
+
+            <h3>Social Media</h3>
+
+            <section>
+              <!--                        <a href="https://www.facebook.com/Ricci" target="_blank" class="footerIcons">-->
+              <!--                            <img src="img/icons/facebook-icon.png" alt="facebook">-->
+              <!--                        </a>-->
+              <!--                        <a href="https://twitter.com" target="_blank" class="footerIcons">-->
+              <!--                            <img src="img/icons/twitter-icon.png" alt="twitter">-->
+              </a>
+              <a href="https://www.instagram.com/ees.art" target="_blank" class="footerIcons">
+                <img src="img/icons/instagram-icon.png" alt="instagram">
+              </a>
+            </section>
+
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

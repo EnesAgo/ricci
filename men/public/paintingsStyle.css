@@ -1,0 +1,105 @@
+.filterCover{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+.filterCover .filter{
+    display: flex;
+    gap: 10px;
+}
+.filterCover .filter h3{
+    margin-right: 20px;
+}
+.filterCover .filter input{
+    background: #fff;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    max-width: 150px;
+    width: 100%;
+    font-size: 20px;
+}
+.filterCover .filter button{
+    height: 35px;
+    max-width: 70px;
+    width: 100%;
+    background: red;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;}
+
+.paintingCover{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+.paintingsSection{
+    max-width: 1300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0 !important;
+}
+.painting{
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.painting div {
+    min-height: 350px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30px;
+    margin: 20px 0;
+    border-right: 1px solid rgba(0,0,0,0.1);
+}
+.painting div:last-child{
+    border-right: none !important;
+}
+.painting div img{
+    max-width: 280px;
+    width: 100%;
+}
+.painting header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+}
+.painting header button{
+    height: 35px;
+    width: 70px;
+    background: var(--button-background-yellow);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.painting header button:hover {
+    background: var(--button-background-yellow-hover);
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .paintingsSection{
+        flex-direction: column;
+    }
+    .filterCover .filter{
+        flex-direction: column;
+        align-items: center;
+        /*display: none;*/
+    }
+    .painting div {
+        border-right: none;
+        padding-right: 0;
+    }
+}
