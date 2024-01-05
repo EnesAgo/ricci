@@ -134,6 +134,7 @@ main{
     cursor: pointer;
     transition: 300ms;
     font-size: 18px;
+    margin: 15px 0;
 }
 .mapFormContainer .formContainer button:hover {
     background: #e65540;
